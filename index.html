@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Satwik Naik</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/Untitled.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/ad1cdb4afa.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+    </head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Untitled.jpeg" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header" onclick="closemenu(event)">Home</a></li>
+                <li><a href="#about" onclick="closemenu(event)">About</a></li>
+                <li><a href="#skills" onclick="closemenu(event)">Projects</a></li>
+                <li><a href="#skills-section" onclick="closemenu(event)">Skills</a></li>
+                <li><a href="#contact" onclick="closemenu(event)">Contact</a></li>
+                <li> <a href="images/Satwik_Naik.pdf" target="_blank" onclick="closemenu(event)">Resume</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Satwik </span><br> Naik</h1>
+        </div>
+    </div>
+    </div>
+    <!-- ----about----- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img1.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Full Stack Developer skilled in JavaScript, React.js, Next.js, Node.js, Express.js, 
+                        Shopify Liquid, and MySQL. Skilled in both frontend and backend development, crafting robust and scalable
+                         web applications. Proficient in JavaScript and e-commerce integrations with deep knowledge of the Shopify ecosystem. 
+                         A strong problem solver committed to delivering high-quality, user-centric solutions. Thrives in collaborative 
+                         environments, consistently driving projects to success.</p>
+
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contains active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Frontend development</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Backend development</span><br>Designing Web/App End-to-End Functionalities</li>
+                    </ul>
+                </div>
+                <div class="tab-contains" id="experience">
+                    <ul>
+                        <li><span>Jun 2022 - Current</span><br>Jr. Software Engineer<br>NewAge Products .inc</li>
+                        <li><span>Aug 2021 - Feb 2022</span><br>Software Development Intern<br>Mobil80 Solutions and Services pvt .ltd</li>
+                       
+                    </ul>
+                </div>
+                <div class="tab-contains" id="education">
+                    <ul>
+                        <li><span>B.Tech in Computer Science</span><br>Srinivas University, College of Engineering and Technology</li>
+                        <li><span>Karnataka Pre-University Board</span><br>Alva's Pre-University College</li>
+                        <li><span>Karnataka Secondary Education Examination Board</span><br>New English School</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="services-list">
+                <div>
+            
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Web Design</h2>
+                    <p>Full Stack Developer skilled in JavaScript, React.js, Next.js, Node.js, Express.js, 
+                        Shopify Liquid, and MySQL. Skilled in both frontend and backend development, crafting robust and scalable
+                         web applications. Proficient in JavaScript and e-commerce integrations with deep knowledge of the Shopify ecosystem. 
+                         A strong problem solver committed to delivering high-quality, user-centric solutions. Thrives in collaborative 
+                         environments, consistently driving projects to success.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>App Development</h2>
+                    <p>Full Stack Developer skilled in JavaScript, React.js, Next.js, Node.js, Express.js, 
+                        Shopify Liquid, and MySQL. Skilled in both frontend and backend development, crafting robust and scalable
+                         web applications. Proficient in JavaScript and e-commerce integrations with deep knowledge of the Shopify ecosystem. 
+                         A strong problem solver committed to delivering high-quality, user-centric solutions. Thrives in collaborative 
+                         environments, consistently driving projects to success.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                    <h2>Backend Development</h2>
+                    <p>Full Stack Developer skilled in JavaScript, React.js, Next.js, Node.js, Express.js, 
+                        Shopify Liquid, and MySQL. Skilled in both frontend and backend development, crafting robust and scalable
+                         web applications. Proficient in JavaScript and e-commerce integrations with deep knowledge of the Shopify ecosystem. 
+                         A strong problem solver committed to delivering high-quality, user-centric solutions. Thrives in collaborative 
+                         environments, consistently driving projects to success.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     -->
+
+    <!-- skills -->
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/waste.jpeg">
+                    <div class="layer">
+                        <h3>Waste Management</h3>
+                        <p>Use IoT to segregate the waste as wet and dry using the moisture sensor. Once the bin is full, it notifies BBMP with a message informing them to collect the waste from this location. Xyz will send GPS location also.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dict (2).jpeg">
+                    <div class="layer">
+                        <h3>Waste Management</h3>
+                        <p>Use IoT to segregate the waste as wet and dry using the moisture sensor. Once the bin is full, it notifies BBMP with a message informing them to collect the waste from this location. Xyz will send GPS location also.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/istockphoto-1320033557-612x612.jpg">
+                    <div class="layer">
+                        <h3>Waste Management</h3>
+                        <p>Use IoT to segregate the waste as wet and dry using the moisture sensor. Once the bin is full, it notifies BBMP with a message informing them to collect the waste from this location. Xyz will send GPS location also.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn" id="see-more-btn">See more</a>
+        </div>
+    </div>
+    
+
+    <!-- Contact -->
+    <section id="skills-section">
+        <div class="container">
+            <div class="heading-section">
+                <h1>My Skills</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>Next.JS</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-1" style="width: 90%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>React.JS</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-2" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>Node.JS</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-2" style="width: 70%;">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>Express.JS</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-2" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>JavaScript</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-3" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>Shopify</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-2" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>PHP Laravel</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-2" style="width: 50%;">50%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>SQL</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-4" style="width: 50%;">50%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>HTML</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-3" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="progress-wrap">
+                        <h4>CSS</h4>
+                        <div class="progress">
+                            <div class="progress-bar color-3" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>naiksatwik099@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9513676469</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Satwik_Naik.pdf" class="btn btn2" target="_blank">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="E-mail" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Satwik 2024.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contains");
+    
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0"; // Show the menu
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px"; // Hide the menu
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const workItems = document.querySelectorAll('.work');
+    const seeMoreBtn = document.getElementById('see-more-btn');
+
+    // Check if there are 3 or more work items
+    if (workItems.length >= 4) {
+        seeMoreBtn.style.display = 'block'; // Show button
+    } else {
+        seeMoreBtn.style.display = 'none'; // Hide button
+    }
+});
+        
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxzes29jL3wdmoiZ-k_4SQJpXEJEY9O8Zw0N4k9uuhbuSqbWsPhGu_xcBGZz7t0Gwo/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{ msg.innerHTML = "Message sent Sucessfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+    })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
